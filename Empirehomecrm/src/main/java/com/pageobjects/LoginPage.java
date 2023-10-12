@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.base.Basetest;
 
-public class Loginfunctionality extends Basetest {
+public class LoginPage extends Basetest {
 
    @FindBy (xpath="//input[@placeholder='example@gmail.com']")   
    WebElement userid;
@@ -18,7 +18,7 @@ public class Loginfunctionality extends Basetest {
    @FindBy (xpath="//button[text()='Login']")
    WebElement loginbutton;
    
-   public Loginfunctionality() {           //constructor
+   public LoginPage() {           //constructor
 	   
 	   PageFactory.initElements(driver,this);
    }

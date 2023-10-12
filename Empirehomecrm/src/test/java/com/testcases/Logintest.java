@@ -7,11 +7,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.base.Basetest;
-import com.pageobjects.Loginfunctionality;
+import com.pageobjects.LoginPage;
 
 public class Logintest extends Basetest {
 
-	Loginfunctionality lf;
+	LoginPage lf;
 
 	public Logintest() {
 		super();   //invokes the parent class constructor
@@ -22,7 +22,7 @@ public class Logintest extends Basetest {
 
 		initialization();
 
-		lf = new Loginfunctionality();
+		lf = new LoginPage();
 
 	}
 
@@ -38,8 +38,6 @@ public class Logintest extends Basetest {
 
 	@AfterMethod
 	public void teardown() {
-		  extentreports.flush();
-		//driver.close();
-
+		  
 	}
 }
