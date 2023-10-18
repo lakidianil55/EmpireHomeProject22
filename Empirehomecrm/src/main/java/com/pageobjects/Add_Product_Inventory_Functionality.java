@@ -22,7 +22,6 @@ public class Add_Product_Inventory_Functionality extends Basetest {
 	@FindBy(xpath = "//span[@id='select2-catDD-container']")
 	WebElement clickdropdown;
 
-	// textarea[@name='Title']
 
 	@FindBy(xpath = "//input[@role='textbox']")
 	WebElement clicktext;
@@ -66,6 +65,14 @@ public class Add_Product_Inventory_Functionality extends Basetest {
 	@FindBy(xpath = "//button[normalize-space()='Save']")
 	WebElement textbox15;
 
+
+	@FindBy(xpath = "//input[@placeholder='Search']")
+	WebElement textbox16;
+	
+
+	@FindBy(xpath = "//button[normalize-space()='Search']")
+	WebElement textbox17;
+	
 	public Add_Product_Inventory_Functionality() {
 		PageFactory.initElements(driver, this);
 
@@ -126,6 +133,9 @@ public class Add_Product_Inventory_Functionality extends Basetest {
 		utils.Robot();
 		Thread.sleep(2000);
 		textbox15.click();
-
+		Thread.sleep(2000);
+		textbox16.sendKeys(prop.getProperty("search"));
+		Thread.sleep(2000);
+		textbox17.click();//search button
 	}
 }

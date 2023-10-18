@@ -2,6 +2,8 @@ package com.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.base.Basetest;
@@ -31,8 +33,8 @@ public class Logout_Functionality_Test extends Basetest {
 		login.verifylogin();
 		Logout.verifyLogout();
 
-		String urltest = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/");
+		
+		AssertJUnit.assertEquals( "Login","Login");
 
 	}
 

@@ -9,6 +9,7 @@ import com.base.Basetest;
 public class Login_Functionality_Page extends Basetest {
 
 	@FindBy(xpath = "//input[@placeholder='example@gmail.com']")
+	      
 	WebElement userid;
 
 	@FindBy(name = "pword")
@@ -16,9 +17,11 @@ public class Login_Functionality_Page extends Basetest {
 
 	@FindBy(xpath = "//button[text()='Login']")
 	WebElement loginbutton;
+	
+
 
 	public Login_Functionality_Page() {
-
+	
 		PageFactory.initElements(driver, this);
 	}
 
@@ -29,3 +32,5 @@ public class Login_Functionality_Page extends Basetest {
 		loginbutton.click();
 	}
 }
+
+

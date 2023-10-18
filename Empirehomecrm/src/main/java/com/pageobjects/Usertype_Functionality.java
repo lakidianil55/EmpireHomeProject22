@@ -52,7 +52,7 @@ public class Usertype_Functionality extends Basetest {
 	}
 
 	public void UserTypeverify(String Textfiledname, String Textfiledcode, String searchtext, String RETypeName,
-			String RETypeCode) throws Throwable {
+			String RETypeCode, String searchtext1) throws Throwable {
 
 		Thread.sleep(2000);
 		clickkeypad.click();
@@ -79,5 +79,7 @@ public class Usertype_Functionality extends Basetest {
 		TypeCode.sendKeys(RETypeCode);
 		Thread.sleep(2000);
 		clickSave.click();
+		Thread.sleep(2000);
+		search.sendKeys(searchtext1);
 	}
 }

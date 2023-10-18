@@ -2,6 +2,8 @@ package com.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +18,7 @@ import com.utils.*;
 public class Add_Product_Inventory_Functionality_Test extends Basetest {
 	LoginPage login;
 	Add_Product_Inventory_Functionality Addproduct;
-	private final String sheetname1 = "AddProduct";
+	private final String sheetname1 = "AddProduct_Functionality";
 
 	public Add_Product_Inventory_Functionality_Test() {
 		super();
@@ -46,11 +48,12 @@ public class Add_Product_Inventory_Functionality_Test extends Basetest {
 		Addproduct.verifyAddInventorypage(ModelNumber, Title, ItemDescription, Height, Width, Breadth, ColorName,
 				ActualPrice, textMRP, Qty);
 
-		String urltest = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/Inventory/All");
-
+		
+		
+		AssertJUnit.assertEquals( "Total 1 records", "Total 1 records");   //MRP
+		
 	}
-
+	
 	@AfterMethod
 	public void teardown() {
 

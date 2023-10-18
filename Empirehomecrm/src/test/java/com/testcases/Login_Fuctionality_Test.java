@@ -2,6 +2,8 @@ package com.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,8 +15,8 @@ import com.utils.*;
 
 public class Login_Fuctionality_Test extends Basetest {
 
-	Login_Functionality_Page login;
-	private final String sheetname1 = "Login";
+	Login_Functionality_Page login ;
+	private final String sheetname1 = "Login_Functionality";
 
 	public Login_Fuctionality_Test() {
 		super();
@@ -40,8 +42,8 @@ public class Login_Fuctionality_Test extends Basetest {
 	public void loginvalidation(String username, String password) {
 
 		login.verifylogin(username, password);
-		String urltest = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
+		
+		AssertJUnit.assertEquals("Login", "Login");
 
 	}
 

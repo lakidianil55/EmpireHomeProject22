@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.Basetest;
+import com.utils.utils;
 
 public class Customer_functionality extends Basetest {
 
@@ -43,6 +44,8 @@ public class Customer_functionality extends Basetest {
 
 	@FindBy(xpath = "//button[@class='swal-button swal-button--yes']")
 	WebElement clickyes;
+	
+	
 
 	public Customer_functionality() {
 		PageFactory.initElements(driver, this);
@@ -67,6 +70,7 @@ public class Customer_functionality extends Basetest {
 		clickSave.click();
 		Thread.sleep(2000);
 		search.sendKeys(CustomerSearch);
+		Thread.sleep(2000);
 		Edit.click();
 		EnterCustomerName.clear();
 		EnterCustomerName.sendKeys(REEnterCustomerName);
@@ -82,9 +86,13 @@ public class Customer_functionality extends Basetest {
 		Thread.sleep(2000);
 		clickSave.click();
 		Thread.sleep(2000);
+		search.sendKeys(CustomerSearch);
 		Delate.click();
 		Thread.sleep(2000);
 		clickyes.click();
+		Thread.sleep(2000);
+		search.sendKeys(CustomerSearch);
+	
 	}
 
 }

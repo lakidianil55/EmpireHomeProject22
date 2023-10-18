@@ -20,6 +20,7 @@ public class Holidays_Functionality extends Basetest {
 	@FindBy(xpath = "//a[normalize-space()='Add New']")
 	WebElement clickAddNew;
 	
+	
 	@FindBy(xpath = "//input[@name='HolidayDate']")
 	WebElement HolidayDate;
 
@@ -35,7 +36,7 @@ public class Holidays_Functionality extends Basetest {
 
 	@FindBy(xpath = "//tbody/tr[1]/td[5]/a[1]/button[1]")
 	WebElement clicEditbutton;
-	@FindBy(xpath = "//tbody/tr[1]/td[5]/a[2]/button[1]")
+	@FindBy(xpath = "//tbody/tr[36]/td[5]/a[2]/button[1]")
 	WebElement clicDelatebutton;
 
 	@FindBy(xpath = "//button[@class='swal-button swal-button--yes']")
@@ -56,13 +57,15 @@ public class Holidays_Functionality extends Basetest {
 		Thread.sleep(2000);
 		clickAddNew.click();
 		Thread.sleep(2000);
-		HolidayDate.clear();
+		HolidayDate.click();
+		Thread.sleep(2000);
+		
 		HolidayDate.sendKeys(TextHolidayDate);
 		Thread.sleep(2000);
-		HolidayName.clear();
+		
 		HolidayName.sendKeys(TextHolidayName);
 		Thread.sleep(2000);
-		HolidayDesc.clear();
+	
 		HolidayDesc.sendKeys(TextHolidayDesc);
 		Thread.sleep(2000);
 		clickSave.click();
