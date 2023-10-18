@@ -43,7 +43,7 @@ public class Holidays_Functionality_Test extends Basetest {
 		login.verifylogin();
 		Holidays.Holidaysverify(TextHolidayDate, TextHolidayName, TextHolidayDesc, REHolidayDate, REHolidayName, REHolidayDesc);
 
-		AssertJUnit.assertEquals(35 ,35);
+			AssertJUnit.assertTrue(driver.findElement(By.xpath("//td[normalize-space()='36']")).isDisplayed());
 	}
 
 	@AfterMethod
