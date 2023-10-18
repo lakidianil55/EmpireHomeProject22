@@ -50,7 +50,7 @@ public class Add_Product_Inventory_Functionality_Test extends Basetest {
 
 		
 		
-		AssertJUnit.assertEquals( "Total 1 records", "Total 1 records");   //MRP
+		AssertJUnit.assertEquals( "Total 1 records", "Total 1 records");   
 		
 	}
 	
