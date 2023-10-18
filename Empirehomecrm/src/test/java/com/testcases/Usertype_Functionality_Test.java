@@ -49,7 +49,7 @@ public class Usertype_Functionality_Test extends Basetest {
 		Usertype.UserTypeverify(Textfiledname, Textfiledcode, searchtext, RETypeName, RETypeCode, searchtext1);
 
 		
-		AssertJUnit.assertEquals(1,1);
+
 
 	}
 
