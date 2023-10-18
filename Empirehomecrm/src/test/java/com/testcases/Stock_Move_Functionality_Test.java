@@ -46,7 +46,7 @@ public class Stock_Move_Functionality_Test extends Basetest {
 		StockMove.Stockmoveverify(References, textbox,MvingQty,REReferences,REtextbox,REMovingQty);
 	
 	
-		AssertJUnit.assertEquals(500,500);
+		
 
 	}
 
