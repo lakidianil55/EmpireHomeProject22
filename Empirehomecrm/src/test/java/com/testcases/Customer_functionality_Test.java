@@ -42,10 +42,10 @@ public class Customer_functionality_Test extends Basetest {
 	public void Customervalidation(String EnterCustomerNameTesx,String EnterMobileNumberText,String EnterEmailIdText,String EnterWhatsappNumberText,String CustomerSearch,String REEnterCustomerName,String REEnterMobileNumber,String REEnterEmailId,String REEnterWhatsappNumber  ) throws Throwable {
 		login.verifylogin();
 		Customer.Customervalidation(EnterCustomerNameTesx, EnterMobileNumberText, EnterEmailIdText, EnterWhatsappNumberText, CustomerSearch, REEnterCustomerName, REEnterMobileNumber, REEnterEmailId, REEnterWhatsappNumber);
-//		boolean test = !driver.equals("test = !driver.equals");
-//		AssertJUnit.assertTrue("No matching records found'", test);
-//		
-		AssertJUnit.assertEquals("Showing 0 to 0" ,"Showing 0 to 0");
+
+		
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//td[@class='dataTables_empty']")).isDisplayed());
+		
 
 		}
 
