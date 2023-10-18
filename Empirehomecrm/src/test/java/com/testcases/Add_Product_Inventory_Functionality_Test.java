@@ -50,7 +50,8 @@ public class Add_Product_Inventory_Functionality_Test extends Basetest {
 
 		
 		
-		 AssertJUnit.assertTrue(driver.findElement(By.xpath("//span[normalize-space()='Total 0 records']")).isDisplayed());  
+		
+		 AssertJUnit.assertTrue(driver.findElement(By.xpath("//span[normalize-space()='Total 1 records']")).isDisplayed());  
 		
 	}
 	
